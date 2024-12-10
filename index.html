@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>
+		dark mode
+	</title>
+</head>
+<body>
+<h1>WELLCOME TO DARKMODE</h1><br/>
+<div class="hello">
+<p><strong>MY SELF</strong></p><br/>
+<p><strong>NAME:</strong>Kiran baskota</p><br/>
+<p><strong>CLASS:</strong>Nine</p><br/>
+<p><strong>ROLL NO:</strong>13</p><br/>
+<p><strong>SECTION:</strong>'C'</p><br/>
+<p><strong>HOBBY:</strong>ANIME AND GAMING</p><br/>
+<p><strong>FORM COMPLETE</strong></p><br/>
+</div>
+<div class="mode">
+	<button onclick="dark()" class="darklol">
+		Dark		
+	</button>
+	<button onclick="whitecolor()" class="whitelol">
+		Normal
+	</button>
+</div>
+<script type="text/javascript">
+	const a=document.getElementsByClassName("hello");
+	function dark(){
+		a[0].classList.add('dark');
+		a[0].classList.remove('white');
+	}
+	function whitecolor(){
+		a[0].classList.add('white');
+		a[0].classList.remove('dark');
+	}
+</script>
+</body>
+</html>
